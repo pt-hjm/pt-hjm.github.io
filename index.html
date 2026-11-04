@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Putri Garden Residence 2</title>
+    <link rel="icon" type="image/png" href="assets/HJM-logo.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>   
+    <header class="navbar">
+        <div class="brand">
+            <img src="assets/HJM-logo.svg" class="company-logo">     
+            <span class="company-name">PT Herald Jaya Makmur</span>
+        </div>
+
+        <a href="#kontak" class="wa-button">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>WA Marketing</span>
+        </a> 
+        
+        <nav class="nav-menu">
+            <a href="#proyek" class="nav-link">Tipe Rumah</a>
+            <a href="#fasilitas" class="nav-link">Fasilitas</a>
+            <a href="#siteplan" class="nav-link">Site Plan</a>
+            <a href="#kpr" class="nav-link">Syarat KPR FLPP</a>
+            <a href="#tentang" class="nav-link">Tentang Kami</a>
+        </nav>
+
+        <button class="hamburger" aria-label="Toggle Navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-badge">
+                    <h1>Putri Garden Residence 2</h1>
+                </div>
+                <h2>Wujudkan Rumah Impian Anda di <span>Lokasi Strategis</span></h2>
+                <p>Pilihan hunian berkualitas tinggi dengan desain modern, lingkungan asri, dan aksesibilitas lengkap untuk kenyamanan keluarga Anda.</p>
+                <div class="hero-buttons">
+                    <a href="#proyek" class="btn-primary">
+                        Lihat Pilihan Tipe Rumah <i class="fa-solid fa-arrow-down"></i>
+                    </a>
+                    <a href="#kpr" class="btn-outline">
+                        Panduan KPR FLPP
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyek" class="projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <h3>Pilihan Tipe Rumah & Kavling</h3>
+                    <p>Tersedia tipe 36/84 subsidi berkualitas dan kavling matang dengan luas tanah 98 m².</p>
+                </div>
+
+                <div class="project-grid">
+                    <div class="project-card card-type-36">
+                        <div class="carousel-container" id="carousel-container">
+                            <span class="card-badge"><i class="fa-solid fa-fire"></i> Subsidi FLPP</span>
+                            <div class="carousel-counter"><span id="current-slide">1</span> / <span id="total-slides">5</span>
+                            </div>
+                            
+                            <div class="carousel-slide active">
+                                <img src="assets/front.png?auto=format&fit=crop&w=1200&q=80" alt="Tampak Depan Tipe 36">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/floorplan.png?auto=format&fit=crop&w=1200&q=80" alt="Floor Plan Tipe 36">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/pembangunan.jpg?auto=format&fit=crop&w=1200&q=80" alt="Pembangunan">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/plafon.jpg?auto=format&fit=crop&w=1200&q=80" alt="Plafon">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/rumah-contoh.jpeg?auto=format&fit=crop&w=1200&q=80" alt="Rumah Contoh">
+                            </div>
+
+                            <div class="carousel-overlay"></div>
+
+                            <button class="carousel-btn prev" onclick="prevSlide()"><i class="fa-solid fa-chevron-left"></i></button>
+                            <button class="carousel-btn next" onclick="nextSlide()"><i class="fa-solid fa-chevron-right"></i></button>
+
+                            <div class="carousel-dots">
+                                <button class="dot active" onclick="goToSlide(0)"></button>
+                                <button class="dot" onclick="goToSlide(1)"></button>
+                                <button class="dot" onclick="goToSlide(2)"></button>
+                                <button class="dot" onclick="goToSlide(3)"></button>
+                                <button class="dot" onclick="goToSlide(4)"></button>
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <div>
+                                <div class="card-header-flex">
+                                    <h4 class="card-title">Rumah Tipe 36 / 84</h4>
+                                    <div class="card-price">Rp 166 Juta</div>
+                                </div>
+                                <p class="card-desc">Hunian idaman siap huni dengan struktur bangunan kuat, tata ruang optimal, dan lingkungan yang nyaman untuk keluarga tercinta.</p>
+
+                                <div class="specs-grid">
+                                    <div class="spec-item">
+                                        <div class="spec-icon"><i class="fa-solid fa-ruler-combined"></i></div>
+                                        <div class="spec-info"><span>Luas Bangunan</span><strong>36 m²</strong></div>
+                                    </div>
+                                    <div class="spec-item">
+                                        <div class="spec-icon"><i class="fa-solid fa-map"></i></div>
+                                        <div class="spec-info"><span>Luas Tanah</span><strong>84 m²</strong></div>
+                                    </div>
+                                    <div class="spec-item">
+                                        <div class="spec-icon"><i class="fa-solid fa-couch"></i></div>
+                                        <div class="spec-info"><strong>1 Ruang Tamu</strong></div>
+                                    </div>
+                                    <div class="spec-item">
+                                        <div class="spec-icon"><i class="fa-solid fa-bed"></i></div>
+                                        <div class="spec-info"><strong>2 Kamar Tidur</strong></div>
+                                    </div>
+                                    <div class="spec-item">
+                                        <div class="spec-icon"><i class="fa-solid fa-bath"></i></div>
+                                        <div class="spec-info"><strong>1 Kamar Mandi</strong></div>
+                                    </div>
+                                    <div class="spec-item">
+                                        <div class="spec-icon"><i class="fa-solid fa-car"></i></div>
+                                        <div class="spec-info"><strong>Carport</strong></div>
+                                    </div>
+                                </div>
+
+                                <div class="features-tags">
+                                    <span class="tag"><i class="fa-solid fa-check"></i> Lokasi Strategis</span>
+                                    <span class="tag"><i class="fa-solid fa-check"></i> SHM</span>
+                                </div>
+                            </div>
+
+                            <div class="card-footer-flex">
+                                <div class="installment-info">
+                                    <span>Estimasi Cicilan</span>
+                                    <strong>Mulai 1 Jutaan / bulan</strong>
+                                </div>
+                                <a href="#kontak" class="btn-primary">
+                                    Booking Tipe 36
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card card-type-54">
+                        <div class="type54-header">
+                            <span class="card-badge-alt"><i class="fa-solid fa-star"></i> Komersil</span>
+                            <span class="type54-header-text">Pilihan Tanah Siap Bangun</span>
+                            <h4>Kavling Tanah Matang</h4>
+                            <p>Bebas bangun sesuai selera dengan infrastruktur kawasan yang sudah matang.</p>
+                        </div>
+
+                        <div class="card-body">
+                            <div>
+                                <div class="type54-main-spec">
+                                    <span>Spesifikasi Utama</span>
+                                    <div class="type54-area">
+                                        <div class="area-icon"><i class="fa-solid fa-vector-square"></i></div>
+                                        Luas Kavling 98 m²
+                                    </div>
+                                </div>
+
+                                <p class="card-desc">Kavling tanah matang siap bangun dengan kontur tanah padat, saluran air/drainase tertata rapi, dan akses jalan lingkungan cor beton selebar 7 meter.</p>
+
+                                <div class="specs-flex">
+                                    <div class="spec-item">
+                                        <div class="spec-icon"><i class="fa-solid fa-circle-check"></i></div>
+                                        <div class="spec-info">
+                                            <strong>Tanah Matang & Padat</strong>
+                                            <p>Siap dirancang bangun tanpa perlu uruk ulang.</p>
+                                        </div>
+                                    </div>
+                                    <div class="spec-item">
+                                        <div class="spec-icon"><i class="fa-solid fa-road"></i></div>
+                                        <div class="spec-info">
+                                            <strong>Akses Jalan Luas</strong>
+                                            <p>Jalan lingkungan lebar muat 2 mobil berpapasan.</p>
+                                        </div>
+                                    </div>
+                                    <div class="spec-item">
+                                        <div class="spec-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                                        <div class="spec-info">
+                                            <strong>Legalitas Aman</strong>
+                                            <p>Sertifikat Hak Milik (SHM) pecah per kapling.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="card-footer-flex">
+                                <a href="#kontak" class="btn-primary" id="btn-type54">
+                                    <i class="fa-brands fa-whatsapp"></i> Tanya Ketersediaan Kavling
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    <section id="fasilitas" class="facilities-section">
+        <div class="container">
+            <div class="section-header">
+                <span>Lokasi & Aksesibilitas</span>
+                <h3>Fasilitas & Lokasi Strategis</h3>
+                <p>Dikelilingi oleh fasilitas publik utama untuk menunjang mobilitas dan gaya hidup harian Anda.</p>
+            </div>
+
+            <div class="facilities-grid">
+                <div class="facility-card">
+                    <div class="facility-icon"><i class="fa-solid fa-hospital"></i></div>
+                    <span class="facility-distance">650 Meter</span>
+                    <h5>RSUD Sukajadi</h5>
+                    <p>Akses kesehatan cepat & tanggap darurat 24 jam.</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon"><i class="fa-solid fa-store"></i></div>
+                    <span class="facility-distance">1.5 Kilometer</span>
+                    <h5>Pasar Tradisional KM12</h5>
+                    <p>Pusat belanja kebutuhan pokok segar setiap hari.</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon"><i class="fa-solid fa-plane-departure"></i></div>
+                    <span class="facility-distance">11.1 Kilometer</span>
+                    <h5>Bandara SMB II</h5>
+                    <p>Kemudahan perjalanan bisnis & mobilitas udara.</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon"><i class="fa-solid fa-school"></i></div>
+                    <span class="facility-distance">Sangat Dekat</span>
+                    <h5>Fasilitas Pendidikan</h5>
+                    <p>Pilihan sekolah SD, SMP, hingga SMA unggulan.</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon"><i class="fa-solid fa-route"></i></div>
+                    <span class="facility-distance">Akses Utama</span>
+                    <h5>Jalan Lintas Sumatera</h5>
+                    <p>Terhubung langsung dengan jalur transportasi utama.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="siteplan" class="siteplan-section">
+        <div class="container">
+            <div class="section-header">
+                <span>Masterplan Perumahan</span>
+                <h3>Site Plan Kawasan</h3>
+                <p>Tata letak kavling dan fasilitas umum yang tertata rapi untuk kenyamanan dan keamanan penghuni.</p>
+            </div>
+
+            <div class="siteplan-box">
+                <div class="siteplan-img-wrapper" id="siteplan-trigger" style="cursor: pointer;" onclick="openModal()">
+                    <img src="assets/siteplan-highlighted.png?auto=format&fit=crop&w=1600&q=80" alt="Site Plan Perumahan">
+                    <div class="siteplan-caption">
+                        <div>
+                            <span>Masterplan Resmi</span>
+                            <h4>Blok A-H Putri Garden Residence 2</h4>
+                            <p>Total 165 Unit Rumah & Kavling dengan sistem One Gate System.</p>
+                        </div>
+                        <button class="btn-primary">
+                            <i class="fa-solid fa-expand"></i> Perbesar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kpr" class="kpr-section">
+        <div class="container">
+            <div class="section-header">
+                <span>Bantuan Pemerintah</span>
+                <h3>Syarat & Ketentuan KPR FLPP</h3>
+                <p>Panduan lengkap persyaratan pengajuan Kredit Pemilikan Rumah Fasilitas Likuiditas Pembiayaan Perumahan.</p>
+            </div>
+
+            <div class="accordion-wrapper">
+              
+                <div class="accordion-item active">
+                    <button class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-title-flex">
+                            <div class="accordion-number">1</div>
+                            <span>Persyaratan Umum Pemohon</span>
+                        </div>
+                        <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                    </button>
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Warga Negara Indonesia (WNI) berusia minimal 21 tahun atau sudah menikah.</li>
+                            <li>Maksimal usia pemohon saat kredit lunas adalah 65 tahun.</li>
+                            <li>Pemohon maupun pasangan (suami/istri) belum pernah memiliki rumah.</li>
+                            <li>Belum pernah menerima subsidi kepemilikan rumah dari pemerintah.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-title-flex">
+                            <div class="accordion-number">2</div>
+                            <span>Ketentuan Penghasilan (Gaji)</span>
+                        </div>
+                        <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                    </button>
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Penghasilan pokok / gaji dasar pemohon maksimal Rp 8 Juta per bulan untuk rumah tapak.</li>
+                            <li>Berlaku untuk pegawai tetap swasta, PNS, BUMN, maupun wirausaha dengan catatan keuangan yang jelas.</li>
+                            <li>Melampirkan Slip Gaji asli yang disahkan oleh instansi/perusahaan tempat bekerja selama 3 bulan terakhir.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-title-flex">
+                            <div class="accordion-number">3</div>
+                            <span>Dokumen Administrasi yang Harus Disiapkan</span>
+                        </div>
+                        <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                    </button>
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Fotokopi e-KTP pemohon dan pasangan (suami/istri).</li>
+                            <li>Fotokopi Kartu Keluarga (KK) terbaru.</li>
+                            <li>Fotokopi Surat Nikah / Akta Cerai (jika sudah menikah/cerai).</li>
+                            <li>Pas foto terbaru ukuran 3x4 (suami & istri masing-masing 2 lembar).</li>
+                            <li>Fotokopi NPWP dan SPT Tahunan PPh Orang Pribadi.</li>
+                            <li>Rekening koran tabungan 3 bulan terakhir.</li>
+                            <li>Surat Keterangan Belum Memiliki Rumah dari Kelurahan setempat.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-title-flex">
+                            <div class="accordion-number">4</div>
+                            <span>Keuntungan KPR FLPP</span>
+                        </div>
+                        <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                    </button>
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Suku bunga rendah tetap (fix rate) 5% sepanjang tenor pinjaman.</li>
+                            <li>Cicilan ringan mulai 1 jutaan per bulan dan tidak berubah sampai lunas.</li>
+                            <li>Masa tenor cicilan panjang hingga 20 tahun.</li>
+                            <li>Bebas PPN dan sudah termasuk subsidi uang muka dari pemerintah.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="tentang" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <span>Tentang Pengembang</span>
+                    <h3>Dedikasi Membangun Hunian Berkualitas untuk Keluarga Indonesia</h3>
+                    <p>PT. Herald Jaya Makmur adalah pengembang properti berpengalaman selama hampir dua dekade dalam membangun proyek perumahan komersial, ruko, dan fasilitas umum. Berbekal rekam jejak tersebut, kami kini memperluas jangkauan ke pengembangan perumahan subsidi MBR sebagai wujud komitmen nyata dalam menghadirkan hunian berkualitas, tepat waktu, dan terpercaya bagi masyarakat Indonesia.</p>
+
+                    <div class="about-stats">
+                        <div class="stat-box">
+                            <strong>10+</strong>
+                            <span>Tahun Pengalaman</span>
+                        </div>
+                        <div class="stat-box">
+                            <strong>100%</strong>
+                            <span>Legalitas SHM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-carousel-box">
+                    <div class="about-carousel-wrapper" id="about-carousel">
+                        <button class="about-nav-btn prev" onclick="prevAboutSlide()"><i class="fa-solid fa-chevron-left"></i></button>
+                        <button class="about-nav-btn next" onclick="nextAboutSlide()"><i class="fa-solid fa-chevron-right"></i></button>
+
+                        <div class="about-slide active">
+                            <img src="assets/supermarket.jpeg?auto=format&fit=crop&w=1000&q=80" alt="Proyek Masa Lalu 1">
+                            <div class="about-slide-caption">
+                                <span>2008</span>
+                                <h5>Supermarket</h5>
+                            </div>
+                        </div>
+                        <div class="about-slide">
+                            <img src="assets/gedung-nakula.jpeg?auto=format&fit=crop&w=1000&q=80" alt="Proyek Masa Lalu 2">
+                            <div class="about-slide-caption">
+                                <span>2009</span>
+                                <h5>Gedung Tiga Lantai</h5>
+                            </div>
+                        </div>
+                        <div class="about-slide">
+                            <img src="assets/pgr1-1.jpeg?auto=format&fit=crop&w=1000&q=80" alt="Proyek Masa Lalu 3">
+                            <div class="about-slide-caption">
+                                <span>2010</span>
+                                <h5>Putri Garden Residence 1 - 22 unit</h5>
+                            </div>
+                        </div>
+                        <div class="about-slide">
+                            <img src="assets/pgr1-2.jpeg?auto=format&fit=crop&w=1000&q=80" alt="Proyek Masa Lalu 4">
+                            <div class="about-slide-caption">
+                                <span>2010</span>
+                                <h5>Putri Garden Residence 1 - 22 unit</h5>
+                            </div>
+                        </div>
+                        <div class="about-slide">
+                            <img src="assets/pgr1-3.jpeg?auto=format&fit=crop&w=1000&q=80" alt="Proyek Masa Lalu 5">
+                            <div class="about-slide-caption">
+                                <span>2010</span>
+                                <h5>Putri Garden Residence 1 - 22 unit</h5>
+                            </div>
+                        </div>
+                        <div class="about-slide">
+                            <img src="assets/ruko.jpeg?auto=format&fit=crop&w=1000&q=80" alt="Proyek Masa Lalu 6">
+                            <div class="about-slide-caption">
+                                <span>2018</span>
+                                <h5>Ruko - 26 unit</h5>
+                            </div>
+                        </div>
+                        <div class="about-slide">
+                            <img src="assets/masjid.jpeg?auto=format&fit=crop&w=1000&q=80" alt="Proyek Masa Lalu 7">
+                            <div class="about-slide-caption">
+                                <span>2023</span>
+                                <h5>Masjid</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontak" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span>Kontak Kami</span>
+                <h3>Hubungi Tim Pemasaran Putri Garden Residence 2</h3>
+                <p>Isi formulir di bawah untuk konsultasi atau jadwal kunjungan lokasi:</p>
+            </div>
+
+            <div class="contact-box">
+                <form id="whatsappForm">
+                    <div class="form-group">
+                        <label for="userName">Nama:</label>
+                        <input type="text" id="userName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inquiryType">Tujuan:</label>
+                        <select id="inquiryType" class="modern-select" required>
+                            <option value="mendapatkan info">Pertanyaan Umum</option>
+                            <option value="membuat jadwal untuk survei lokasi">Survei Lokasi</option>
+                            <option value="konsultasi KPR & angsuran">Konsultasi KPR & Angsuran</option>
+                        </select>
+                    </div>
+                
+                    <button type="submit" class="btn-primary" id="btn-contact">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>chat sekarang!</span>
+                    </button>
+                    
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h5>Putri Garden Residence 2</h5>
+                    
+                    <ul class="contact-list">
+                        <li><i class="fa-solid fa-location-dot"></i><span>Jl. Swadaya KM 14, Sukajadi Timur, Banyuasin, Sumatera Selatan</span></li>
+                        <li><i class="fa-solid fa-phone"></i><span>+62 812-4676-4183</span></li>
+                        <li><i class="fa-solid fa-envelope"></i><span>ptheraldjayamakmur@gmail.com</span></li>
+                    </ul>
+                    
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61594875603114" target="_blank" class="social-btn" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/pt_hjm" target="_blank" class="social-btn" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.threads.com/@pt_hjm" target="_blank" class="social-btn" title="Threads"><i class="fa-brands fa-threads"></i></a>
+                        <a href="https://www.tiktok.com/@pt_hjm" target="_blank" class="social-btn" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://wa.me/6281246764183" target="_blank" class="social-btn" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+
+                    <h5>Bankers</h5>
+                    <div class="bankers">
+                        <img src="assets/Mandiri.svg">
+                        <img src="assets/BNI.svg">
+                        <img src="assets/BTN.svg">
+                        <img src="assets/Sumsel Babel.svg">
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h5>Peta Lokasi</h5>
+                    <div class="footer-map-box">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.6774979245565!2d104.6713839!3d-2.908868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b73dc677a9de7%3A0x87ae16ac93506356!2sPutri%20Garden%20Residence%202!5e0!3m2!1sid!2sid!4v1793470704442!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 PT Herald Jaya Makmur</p>
+                <div class="rei">
+                    <span>Anggota Resmi Real Estate Indonesia (REI)</span>
+                    <image class="rei-icon" src='assets/REI-logo.png'></image>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Preview -->
+    <div class="modal-overlay" id="siteplan-modal">
+        <div class="modal-card">
+            <button class="modal-close" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></button>
+            <h3>Site Plan Putri Garden Residence 2</h3>
+            <p>Jl. Swadaya KM 14, Sukajadi, Palembang</p>
+            <div class="modal-body">
+                <img src="assets/siteplan-highlighted.png?auto=format&fit=crop&w=1600&q=80" alt="Site Plan Detail">
+            </div>
+        </div>
+    </div>
+        
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
